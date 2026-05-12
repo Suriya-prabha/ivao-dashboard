@@ -24,8 +24,12 @@ COPY . .
 RUN composer install --no-dev --optimize-autoloader
 
 # Frontend build
+WORKDIR /app/ivao-dashboard-ui
+
 RUN npm install
 RUN npm run build
+
+WORKDIR /app
 
 # Laravel setup
 RUN cp .env.example .env || true
