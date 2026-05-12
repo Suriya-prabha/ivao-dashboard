@@ -24,7 +24,7 @@ COPY . .
 RUN composer install --no-dev --optimize-autoloader
 
 # Frontend build
-RUN npm install --omit=optional
+RUN npm install
 RUN npm run build
 
 # Laravel setup
