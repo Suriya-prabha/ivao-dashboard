@@ -69,7 +69,6 @@
         "jsesc": "^3.1.0",
         "json5": "^2.2.3",
         "lightningcss": "^1.32.0",
-        "lightningcss-win32-x64-msvc": "^1.32.0",
         "lru-cache": "^5.1.1",
         "magic-string": "^0.30.21",
         "math-intrinsics": "^1.1.0",
