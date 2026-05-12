@@ -19,12 +19,6 @@ RUN composer install --no-dev --optimize-autoloader
 
 RUN cp .env.example .env || true
 
-RUN php artisan key:generate || true
-
 EXPOSE 10000
-
-RUN php artisan config:clear
-
-RUN php artisan cache:clear
 
 CMD php artisan serve --host=0.0.0.0 --port=10000
